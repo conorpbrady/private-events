@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
 
   helper_method :logged_in?
   helper_method :current_user
+  helper_method :attending_event?
 
   def log_in(user)
     session[:user_id] = user.id
@@ -26,7 +27,5 @@ class ApplicationController < ActionController::Base
       nil
     end
   end
-
-
 
 end

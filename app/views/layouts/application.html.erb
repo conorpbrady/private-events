@@ -13,7 +13,8 @@
     <div id="header">
       <% if logged_in? %>
       <%= link_to "#{current_user.name} Profile", current_user %> |
-      <%= link_to "Create new event", new_event_path %> | 
+      <%= link_to "All Events", events_path %> | 
+      <%= link_to "Create new event", new_event_path %> |
       <%= link_to "Logout", logout_path, method: :delete %>
       <% else %>
       <%= link_to "Sign in", login_path %> |

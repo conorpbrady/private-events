@@ -4,6 +4,17 @@
 </h4>
 <span><%= @user.email %></span>
 
+<h3>Created Events</h3>
 <ul>
   <%= render @events %>
+</ul>
+
+<h3>Past Events Attended</h3>
+<ul>
+  <%= render @user.attended_events.past %>
+</ul>
+
+<h3>Future Events Attending</h3>
+<ul>
+  <%= render @user.attended_events.future %>
 </ul>
