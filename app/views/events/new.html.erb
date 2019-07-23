@@ -1,0 +1,10 @@
+<h1>Create Event</h1>
+
+<%= form_for(:events) do |f| %>
+
+<%= f.label :description %>
+<%= f.text_field :description %>
+
+<%= f.submit "Post Event" %>
+
+<% end %>
